@@ -42,7 +42,7 @@
   // side: -1 = left edge, +1 = right edge
   function drawVine(side, frontierDoc, scrollY, docSpan, seedBase){
     var baseX = side < 0 ? 7 : (cw - 7);       // gutter x in low-res px
-    var amp = window.innerWidth <= 780 ? 0.3 : 5.5;  // sway amplitude
+    var amp = window.innerWidth <= 780 ? 0.15 : 5.5;  // sway amplitude
     var freq  = 0.020;                          // sway frequency (per low-res px of doc)
     var step  = 1;                              // draw resolution
     var docSpanPx = docSpan;                    // total scrollable doc height (css px)
@@ -132,7 +132,7 @@
 
   function drawFlower(cx, cy, bloom, pal, seed){
     var petals = 6;
-    var r = (window.innerWidth <= 780 ? 2.2 : 3.1) * bloom;
+    var r = (window.innerWidth <= 780 ? 1.6 : 3.1) * bloom;
     var rot = rnd(seed) * Math.PI;
     // petals
     for(var p = 0; p < petals; p++){
