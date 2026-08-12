@@ -351,7 +351,9 @@
     chat.appendChild(answerArea(step));
     var area = chat.lastChild;
     var focusable = area.querySelector('input, textarea'); if(focusable) focusable.focus();
-    window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
+    var lastThem = chat.querySelector('.bubble.them.enter') || chat.querySelector('.bubble.them:last-of-type');
+if(lastThem) lastThem.scrollIntoView({behavior:'smooth', block:'start'});
+else window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
   }
 
   function finish(){
