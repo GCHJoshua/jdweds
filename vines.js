@@ -41,6 +41,7 @@
   // ---- one vine down a gutter -------------------------------
   // side: -1 = left edge, +1 = right edge
   function drawVine(side, frontierDoc, scrollY, docSpan, seedBase){
+    var edgeInset = window.innerWidth <= 780 ? 0 : 7;
     var baseX = side < 0 ? 7 : (cw - 7);       // gutter x in low-res px
     var amp = window.innerWidth <= 780 ? 0.15 : 5.5;  // sway amplitude
     var freq  = 0.020;                          // sway frequency (per low-res px of doc)
