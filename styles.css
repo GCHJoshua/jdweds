@@ -238,7 +238,8 @@ textarea.field{ resize:vertical; min-height:84px; line-height:1.5; }
 .sp-dot{ width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,.6); }
 .sp-dot.on{ background:#fff; }
 .story-body{ font-size:19px; line-height:1.6; color:var(--ink); height:auto; overflow:visible; }
-@media (max-width:780px){ .story{ grid-template-columns:1fr; } .story-photo{ aspect-ratio:4/5; max-width:100%; margin:0 auto; } }
+/* @media (max-width:780px){ .story{ grid-template-columns:1fr; } .story-photo{ aspect-ratio:4/5; max-width:100%; margin:0 auto; } } */
+@media (max-width:780px){ .story{ grid-template-columns:1fr; } .story-photo{ order:-1; aspect-ratio:4/5; width:100%; margin:0 0 20px; } }
 .fun-facts{ margin-top:28px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 .fun-fact{ border-top:1.5px solid var(--rule); padding-top:12px; }
 .fun-fact .ff-q{ font-family:var(--mono); font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-deep); margin-bottom:6px; }
