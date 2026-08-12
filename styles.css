@@ -95,7 +95,7 @@ textarea.field{ resize:vertical; min-height:84px; line-height:1.5; }
    LANDING (locked)
    =========================================================== */
 .landing{ min-height:100vh; display:flex; flex-direction:column; position:relative; }
-.landing::before{ content:""; position:absolute; inset:0; background:url('hands-raised.jpg') 60% 80%/cover no-repeat; z-index:0; }
+.landing::before{ content:""; position:absolute; inset:0; background:url('hands-raised.jpg') 80% cover no-repeat; z-index:0; }
 /* .landing::after{ content:""; position:absolute; inset:0; background:linear-gradient(to bottom, rgba(243,239,228,.25) 0%, rgba(243,239,228,.5) 45%, rgba(243,239,228,.8) 70%, var(--paper) 100%); z-index:1; } */
 .ticker{ border-bottom:1.5px solid var(--rule); border-top:1.5px solid var(--rule);
   background:rgba(243,239,228,.85); overflow:hidden; white-space:nowrap; padding:7px 0; position:relative; z-index:2; }
