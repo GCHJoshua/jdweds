@@ -181,6 +181,7 @@ textarea.field{ resize:vertical; min-height:84px; line-height:1.5; }
 .answer-area.toright{ align-items:flex-end; }
 .choice-row{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
 .back-row{ margin-bottom:8px; }
+@media (max-width:480px){ .choice-row .btn{ font-size:11px; padding:10px 14px; } }
 .choice-row .btn.opt1{ background:var(--accent-deep); border-color:var(--ink); color:#fff; }
 .choice-row .btn.opt2{ background:color-mix(in oklch, var(--accent-deep) 65%, var(--accent) 35%); border-color:var(--ink); color:#fff; }
 .choice-row .btn.opt3{ background:color-mix(in oklch, var(--accent-deep) 5%, var(--accent) 95%); border-color:var(--ink); color:#fff; }
