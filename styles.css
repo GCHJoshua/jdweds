@@ -144,7 +144,7 @@ textarea.field{ resize:vertical; min-height:84px; line-height:1.5; }
 .auth-cta{ text-align:center; opacity:0; transform:translateY(14px);
   transition:opacity .5s ease, transform .5s ease; }
 .auth-cta.visible{ opacity:1; transform:translateY(0); }
-.cta-welcome{ font-family:var(--serif); font-size:18px; color:var(--ink); margin:18px 0 22px;
+.cta-welcome{ font-family:var(--serif); font-size:18px; color:#fff; margin:18px 0 22px;
   font-style:italic; letter-spacing:.01em; }
 .cta-btn{ font-size:16px; padding:14px 36px; letter-spacing:.1em; }
 
