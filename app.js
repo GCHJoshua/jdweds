@@ -290,8 +290,8 @@
     }
     else if(s==='shuttle'){
       box.innerHTML = '<div class="choice-row">'
-        + '<button class="btn" data-v="orchard">Yes, drop off at <u><em style="white-space:nowrap">Orchard MRT</em></u> please!</button>'
-        + '<button class="btn" data-v="botanic">Yes, drop off at <u><em style="white-space:nowrap">Botanic Gardens MRT</em></u> please!</button>'
++ '<button class="btn" data-v="orchard">Yes, drop off at <u><em>Orchard MRT</em></u> please!</button>'
++ '<button class="btn" data-v="botanic">Yes, drop off at <u><em>Botanic Gardens MRT</em></u> please!</button>'
         + '<button class="btn ghost" data-v="no">No, it\'s alright!</button></div>';
       box.querySelectorAll('[data-v]').forEach(function(b){ b.onclick=function(){
         draft.shuttle=b.getAttribute('data-v');
