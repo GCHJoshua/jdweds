@@ -54,7 +54,7 @@ window.WEDDING = {
   ],
 
   ourStory: {
-    photos: ["story/photo1.jpg", "story/photo2.jpg", "story/photo3.jpg", "story/photo4.jpg", "story/photo5.jpg", "story/photo6.jpg"],
+    photos: ["ourstory/IMG_5247.JPG", "ourstory/IMG_5704.HEIC", "IMG_5901.JPG"],
     body: "Our story is a modern city romance — we met on a dating app (shoutout to Hinge)! Josh says he waited patiently for me to swipe back on his profile for two whole weeks. In Dorcas' defence, she needed time to seek the wise counsel of her sister, which yielded informal background checks and character approvals from mutual friends before she swiped right!",
     funFacts: [
       { q: "First date", a: "Hopscotch @ Capitol and then ice cream at Venchi afterwards hehe" },
