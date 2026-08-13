@@ -374,7 +374,7 @@ table.rsvp-table tr:last-child td{ border-bottom:none; }
 .landing::before{ background-size:cover; background-position:center top; }
 .landing-body{ padding-top:0; }
   .landing{ min-height:100vh; }
-  .landing::before{ height:100%; background-size:cover; background-position:center 10%; }
+  .landing::before{ height:100%; background-size:cover; background-position:center 0%; }
   .landing-body{ min-height:100vh; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:64px; }
   .venues{ grid-template-columns:1fr; }
   .stats{ margin:18px 0 20px; }
