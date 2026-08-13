@@ -173,7 +173,7 @@ textarea.field{ resize:vertical; min-height:84px; line-height:1.5; }
 .rsvp-required{ font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-deep); }
 .chat{ display:block; margin-top:26px; }
 .bubble{ max-width:82%; width:fit-content; padding:13px 17px; border:1.5px solid var(--rule); border-radius:3px; font-size:18px; line-height:1.5; margin:0 0 14px; height:auto; overflow:visible; }
-.bubble.them{ margin-right:auto; background:rgba(255,255,255,.92); border-bottom-left-radius:1px; }
+.bubble.them{ margin-right:auto; background:rgba(255,255,255,.92); border-bottom-left-radius:1px; scroll-margin-top:80px; }
 .bubble.them .who{ font-family:var(--mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:4px; }
 .bubble.me{ margin-left:auto; background:var(--accent); color:#fff; border-color:var(--ink); box-shadow:2px 2px 0 var(--ink); border-bottom-right-radius:1px; }
 .bubble.me .who{ display:none; }
