@@ -355,7 +355,7 @@
 var lastThem = thems[thems.length-1];
 requestAnimationFrame(function(){
   if(lastThem){
-    var offset = window.innerWidth <= 780 ? 170 : 90;
+    var offset = window.innerWidth <= 780 ? 230 : 90;
     var y = lastThem.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top: y, behavior:'smooth' });
   } else {
