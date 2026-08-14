@@ -353,13 +353,15 @@
     var focusable = area.querySelector('input, textarea'); if(focusable) focusable.focus();
     var thems = chat.querySelectorAll('.bubble.them');
 var lastThem = thems[thems.length-1];
-if(lastThem){
-  var y = lastThem.getBoundingClientRect().top + window.scrollY - 240;
-  window.scrollTo({ top: y, behavior:'smooth' });
-} else {
-  window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
-}
+requestAnimationFrame(function(){
+  if(lastThem){
+    var offset = window.innerWidth <= 780 ? 170 : 90;
+    var y = lastThem.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: y, behavior:'smooth' });
+  } else {
+    window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
   }
+});
   function finish(){
     var rec = {
       id: draft.id || uid(),
