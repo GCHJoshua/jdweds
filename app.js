@@ -354,7 +354,7 @@
     var thems = chat.querySelectorAll('.bubble.them');
 var lastThem = thems[thems.length-1];
 if(lastThem){
-  var y = lastThem.getBoundingClientRect().top + window.scrollY - 110;
+  var y = lastThem.getBoundingClientRect().top + window.scrollY - 170;
   window.scrollTo({ top: y, behavior:'smooth' });
 } else {
   window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
