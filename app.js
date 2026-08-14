@@ -362,6 +362,7 @@ requestAnimationFrame(function(){
     window.scrollTo({ top: document.body.scrollHeight, behavior:'smooth' });
   }
 });
+  }
   function finish(){
     var rec = {
       id: draft.id || uid(),
