@@ -72,8 +72,6 @@ window.WEDDING = {
   faq: [
     { q: "By when do I have to finalise my RSVP?", a: "Kindly send your response by 30 September 2026 so we can finalise numbers with the venues." },
     { q: "Can I bring a plus-one?", a: "As our venues can only support a limited number of guests, we regret to inform you that your invitation only covers yourself. We would love to catch up with you some other time instead!" },
-     { q: "Is parking available?", html: true, a: "<strong>The Bible Church</strong> (No parking available on-site, sorry!)<br>Kindly park at the nearby Block 601 carpark (4 min walk away).<br><a class=\"btn small\" href=\"https://maps.app.goo.gl/NfkqMq8qLsRzDLph8\" target=\"_blank\" rel=\"noopener\">Open in Maps</a>" },
-// { q: "Is parking available at Min Jiang?", html: true, minTier: 2, a: "<strong>Min Jiang at Dempsey</strong> (Free parking available on-site)<br>There are about 40 lots available just beside the venue.<br><a class=\"btn small\" href=\"https://maps.app.goo.gl/V6kPP3bqTzR6ADqT6\" target=\"_blank\" rel=\"noopener\">Open in Maps</a>" }
      { q: "Is parking available?", html: true, a: "<strong>The Bible Church</strong> (No parking available on-site, sorry!)<br>Kindly park at the nearby Block 601 carpark (4 min walk away).<br><a class=\"btn small\" href=\"https://maps.app.goo.gl/NfkqMq8qLsRzDLph8\" target=\"_blank\" rel=\"noopener\">Open in Maps</a>{{MINJIANG}}" }
   ],
 
