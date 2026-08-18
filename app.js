@@ -409,6 +409,7 @@ requestAnimationFrame(function(){
   function renderDetails(){
     clearCd();
     var t = getAuth().tier;
+     var faqList = W.faq.filter(function(f){ return !f.minTier || f.minTier<=t; });
     var sched = W.schedule.filter(function(s){ return s.minTier<=t; });
     var venues = W.venues.map(function(v){
       return Object.assign({}, v, { events: v.events.filter(function(ev){ return ev.minTier<=t; }) });
@@ -470,7 +471,7 @@ requestAnimationFrame(function(){
 
     // faq
     html += '<section class="section-block"><div class="section-title"><span class="gly">✦︎</span><h2>FAQ</h2></div><div id="faq">'
-      + W.faq.map(function(f,i){
+       + faqList.map(function(f,i){
           return '<div class="faq-item'+(f.q.toLowerCase().indexOf('parking')>=0?' faq-parking':'')+'"><button class="faq-q" data-faq="'+i+'">'+esc(f.q)+'</button>'
                + '<div class="faq-a"><p>'+(f.html?f.a:esc(f.a))+'</p></div></div>';
         }).join('')
