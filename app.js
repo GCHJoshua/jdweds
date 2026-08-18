@@ -409,7 +409,13 @@ requestAnimationFrame(function(){
   function renderDetails(){
     clearCd();
     var t = getAuth().tier;
-     var faqList = W.faq.filter(function(f){ return !f.minTier || f.minTier<=t; });
+    var minJiangBlock = "<br><br><strong>Min Jiang at Dempsey</strong> (Free parking available on-site)<br>There are about 40 lots available just beside the venue.<br><a class=\"btn small\" href=\"https://maps.app.goo.gl/V6kPP3bqTzR6ADqT6\" target=\"_blank\" rel=\"noopener\">Open in Maps</a>";
+var faqList = W.faq.map(function(f){
+  if(f.a.indexOf('{{MINJIANG}}')>=0){
+    return Object.assign({}, f, { a: f.a.replace('{{MINJIANG}}', t===2 ? minJiangBlock : '') });
+  }
+  return f;
+});
     var sched = W.schedule.filter(function(s){ return s.minTier<=t; });
     var venues = W.venues.map(function(v){
       return Object.assign({}, v, { events: v.events.filter(function(ev){ return ev.minTier<=t; }) });
